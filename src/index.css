@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'cabinetgrotesk', sans-serif;
+  src: local('cabinetgrotesk'), url('./assets/fonts/Cabinet\ Grotesk/CabinetGrotesk-Regular.ttf') format("truetype");
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
