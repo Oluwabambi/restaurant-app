@@ -24,7 +24,10 @@ body {
 button {
   font-family: 'Cabinet Grotesk'!important;
 }
-footer h1, footer a, footer span, li, .subf-three {
+footer a, footer span, li, .subf-three {
+  font-family: 'Cabinet Grotesk'!important;
+}
+.card-body a {
   font-family: 'Cabinet Grotesk'!important;
 }
 .hero-sect {
@@ -194,8 +197,21 @@ footer h1, footer a, footer span, li, .subf-three {
   width: 100%; 
 }
 .card {
-  width: 32.75%;
+  /* width: 32.75%; */
   background-color: transparent;
+}
+.c-width {
+  width: 100%;
+}
+.h-width {
+  width: 32.75%;
+}
+.news-grid {
+  display: grid;
+  gap: 7px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
 }
 .card-text {
   font-weight: 600;
@@ -207,6 +223,94 @@ footer h1, footer a, footer span, li, .subf-three {
   text-align: center;
   margin: auto;
   max-width: 1180px;
+}
+.menu-sect {
+  max-width: 1200px;
+  margin: auto;
+}
+.menu-first {
+  min-height: 100vh;
+  padding-top: 6rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  justify-content: space-between;
+}
+.menu-first h1 {
+  font-size: 24rem;
+  letter-spacing: -0.7px;
+  line-height: 0.8;
+  font-weight: 400;
+}
+.m-one {
+  width: 70%;
+}
+.m-two {
+  width: 25%;
+}
+.poster-menu-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: -1;
+}
+.poster-menu-img img {
+  width: 24rem;
+}
+.scroll-circle {
+  background-color: #000000;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-circle a {
+  color: #fbf5dc;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu-second {
+  padding-top: 7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.m-list {
+  position: sticky;
+  top: 50%;
+  width: 20%;
+}
+.m-list ul {
+  list-style-type: none;
+}
+.m-details {
+  width: 65%;
+}
+.details-head {
+  margin-bottom: 0;
+  font-size: 5rem;
+  letter-spacing: -1px;
+}
+.m-sect {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #000000;
+}
+.m-sect-one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.m-sect-two {
+  color: #1a1a1a;
+  font-weight: 300;
 }
 .seventh-sect {
   margin-bottom: 15rem;
@@ -226,10 +330,20 @@ footer h1, footer a, footer span, li, .subf-three {
 }
 .btn-black {
   background-color: #000000;
-  padding: 0.7rem 2rem;
   color: #fbf5db;
-  border-radius: 21px;
   border: none;
+}
+.btn-black, .btn-outline-dark {
+  padding: 0.7rem 2rem;
+  border-radius: 21px;
+}
+.btn-outline-dark {
+  background-color: transparent;
+  color: #1a1a1a;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: -0.4px;
 }
 .eigth-sect {
   background-color: #1a1a1a;
@@ -265,6 +379,7 @@ footer h1, footer a, footer span, li, .subf-three {
 .news-container {
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 10rem;
 }
 .news-first {
   display: flex;
@@ -287,12 +402,21 @@ footer h1, footer a, footer span, li, .subf-three {
 .news-cats li {
   font-weight: 600;
 }
+.news-cats a {
+  color: #1a1a1a;
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: -0.9px;
+  text-decoration: none;
+  font-family: 'Cabinet Grotesk'!important;
+}
 footer {
   border-top: 1px solid #00000024;
 }
 .footer-sect {
   margin: auto;
   max-width: 1180px;
+  padding-top: 6rem;
 }
 .f-one {
   display: flex;
@@ -300,6 +424,12 @@ footer {
   align-items: center;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid #00000024;
+}
+.f-one h1 {
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: -3px;
 }
 .f-two {
   display: flex;

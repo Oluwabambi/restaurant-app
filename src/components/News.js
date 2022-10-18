@@ -1,6 +1,7 @@
 import React from 'react'
 import NewsSection from './NewsSection'
 import { newsList } from './News-List'
+import { Link } from 'react-router-dom'
 
 const News = () => {
     const allNews = newsList.allNews
@@ -10,14 +11,14 @@ const News = () => {
             <h1>Latest news</h1>
             <div className='news-cats'>
                 <ul>
-                    <li className='p-2'>COOKING</li>
-                    <li className='p-2'>CULTURE</li>
-                    <li className='p-2'>DAILY LIFE</li>
-                    <li className='p-2'>RECIPES</li>
+                    <li className='p-3'><Link>COOKING</Link></li>
+                    <li className='p-3'><Link>CULTURE</Link></li>
+                    <li className='p-3'><Link>DAILY LIFE</Link></li>
+                    <li className='p-3'><Link>RECIPES</Link></li>
                 </ul>
             </div>
         </div>
-        <div className="article-sect">
+        <div className="news-grid">
             {allNews.map((news) => <NewsSection key={news.id} {...news} />)}
         </div>
     </div>
