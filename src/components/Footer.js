@@ -1,11 +1,12 @@
-import React from 'react'
+import { Link } from "react-router-dom";
+import star from '../assets/images/star-shape.svg'
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-sect">
         <div className="f-one">
-          <h1>DELICE</h1>
+          <h1><img alt='' src={star} />FLAVO<img alt='' src={star} /></h1>
           <button className="btn btn-black">BOOK A TABLE</button>
         </div>
         <div className="f-two">
@@ -26,7 +27,7 @@ const Footer = () => {
               <li>FACEBOOK</li>
               <li>PINTEREST</li>
               <li>TRUSTPILOT</li>
-              <li>INFO@DELICE.COM</li>
+              <li>INFO@FLAVO.COM</li>
             </ul>
           </div>
           <div className="w-4 ms-auto">
@@ -53,16 +54,18 @@ const Footer = () => {
         </div>
         <div className="sub-footer">
           <div className="subf-one">
-            <a href="#">Changelog</a><a href="#">Styleguide</a><a href="#">Licensing</a>
+            <Link>Changelog</Link>
+            <Link>Styleguide</Link>
+            <Link>Licensing</Link>
           </div>
-          <div className='subf-two'>
-            <a href="#">BACK TO TOP</a>
+          <div className="subf-two">
+            <Link>BACK TO TOP</Link>
           </div>
           <div className="subf-three">Made In Webflow</div>
         </div>
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

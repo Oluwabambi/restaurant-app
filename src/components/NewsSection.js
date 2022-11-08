@@ -1,4 +1,5 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+import star from "../assets/images/star-shape.svg";
 
 const NewsSection = ({image, category, text, wStyle, date}) => {
   return (
@@ -12,7 +13,7 @@ const NewsSection = ({image, category, text, wStyle, date}) => {
                     </p>
                     <h3 className="card-text">{text}</h3>
                 </div>
-                <a href="#" className="btn btn-outline-dark">READ ARTICLE</a>
+                <Link  className="btn btn-outline-black"><img src={star} className = 'star-left' alt="article"/><div className="opaq-outline"></div>READ ARTICLE<img src={star} className='star-right' alt="article" /> </Link>
             </div>
         </div>
     </>
